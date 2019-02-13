@@ -1,0 +1,165 @@
+/* style for the main index.html page */
+
+body{
+  font-family: arial;
+  margin: 0;
+  background: #eeeeee;
+}
+
+/* the wrapper sill adjust the inner container of the contents of the site */
+#wrapper {
+  width: 980px;
+  margin: 0 auto;
+  text-align: center;
+  background: #fff;
+}
+
+/* coloring and adjusting the top nav list */
+#main-navigation{
+  background: #181818;
+  padding: 10px;
+}
+
+/* remove the bullets for the nav list, aligh text tot he right of the nav menu */
+#main-navigation ul{
+  text-align: right;
+  list-style-type: none;
+  margin-right: 10px;
+}
+/* make the nav items sit side by side */
+#main-navigation li{
+  display: inline-block;
+  margin-left: 20px;
+}
+
+/* styling the anchor tags */
+#main-navigation a{
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 6px;
+}
+
+/* styling the positioning the main profile image */
+.bioImages{
+  border-radius: 100%;
+  width: 200px;
+  height: 225px;
+  float: left;
+  padding-right: 10px;
+}
+
+/* styling and positioning the development section image */
+.developmentImage {
+    width: 200px;
+    height: 200px;
+    float: right;
+    padding-right: 10px;
+}
+
+/* styling and positioning the tools section image */
+.toolsImage {
+    width: 200px;
+    height: 200px;
+    float: right;
+    padding-right: 10px;
+    border-radius: 100px;
+    float: left;
+}
+
+/* styling the about section */
+
+#bioSection{
+width: 10px 30px;
+margin: 20px 100px 75px;
+text-align: left;
+line-height: 25px;
+word-spacing: 2px;
+}
+
+/* styling the main skills section */
+#Skills{
+  width: 10px 30px;
+  margin: 20px 150px;
+  text-align: left;
+}
+
+/* spacing the contents of the development/testing and tools sections */
+#table-style{
+  border-spacing: 5px 5px;
+}
+
+/* styling for both the development and tools sub sections */
+.developmentToolsFormat{
+  width: 10px 30px;
+  margin: 20px 10px 75px;
+  text-align: left;
+  line-height: 25px;
+  word-spacing: 2px;
+}
+
+/* the following are the styling and view adjustment for the bottom nav menu */
+#bottom-nav{
+  background: #181818;
+  padding: 10px;
+}
+
+#bottom-nav ul{
+  text-align: center;
+  list-style-type: none;
+  margin-right: 10px;
+}
+
+#bottom-nav li{
+  display: inline-block;
+  margin-left: 20px;
+}
+
+#bottom-nav a{
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 6px;
+}
+
+/* styling copryright area */
+#copyright{
+  color: #fff;
+  background: #181818;
+  margin: 0;
+  text-align: left;
+  padding-bottom: 15px;
+  padding-left: 10px;
+
+}
+
+/*
+#listSkills li{
+  display: inline-block;
+  margin-right: 20px;
+}
+*/
+
+/* styling the form area of the page */
+textarea{
+  resize: none;
+  border-radius: 5px;
+}
+input{
+  margin: 20px 25px;
+  width: 125px;
+  border-radius: 5px
+}
+#submitBtn{
+  border-radius: 5px;
+  margin: 15px 5px;
+  padding: 5px 10px;
+  font-size: 17px;
+}
+
+h2{
+  text-transform: uppercase;
+  text-align: center;
+  margin: 30px auto 25px;

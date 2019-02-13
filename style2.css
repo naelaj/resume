@@ -1,0 +1,15 @@
+/* style for the submitted html page */
+
+body{
+  font-family: arial;
+  margin: 0;
+}
+
+#wrapper {
+  width: 1400px;
+  height: 100px;
+  padding: 40px 100px 50px;
+  margin: 0;
+  text-align: left;
+  background: #eeeeee;
+}

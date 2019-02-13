@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Nael Aljabi</title>
+  </head>
+  <body>
+
+  <div id="wrapper"> <!-- used to make changes to the inner contents of the html body -->
+
+  <nav id="main-navigation">
+    <ul>
+      <li><a href="#bioSection">Bio</a></li>
+      <li><a href="#Skills">Skills</a></li>
+      <li><a href="#Contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div id="bioSection">
+    <h2>About Me</h2>
+    <img class="bioImages" src="naelpic.png" alt="nael">
+    <section>
+
+      <p>Hi, my name is Nael Aljabi I'm QA tester with more than 4 years experience working in a software development agile environment.
+        I mostly worked in startups covering industries ranging from Social media platforms, dating and education.
+        I'm also familar with some front and backend web technologies, this site is made using HTML, CSS, javascript, node js with express and
+        hosted on Heroku.
+        </p>
+    </section>
+  </div>
+
+  <div id="Skills">
+    <h2>Skills</h2>
+    <div>
+      <img class= "developmentImage" src="coding.png" alt="coding">
+      <section class="developmentToolsFormat">
+        <h3>Development and Testing</h3>
+
+          <table id="table-style">
+            <tr>
+              <td>HTML</td>
+              <td>★★</td>
+              <td>CSS</td>
+              <td>★★</td>
+            </tr>
+            <tr>
+              <td>Javascript ES6</td>
+              <td>★★</td>
+              <td>Node.js</td>
+              <td>★</td>
+            </tr>
+            <tr>
+              <td>Express</td>
+              <td>★</td>
+              <td>RESTful Web APIs</td>
+              <td>★</td>
+            </tr>
+            <tr>
+              <td>Agile Methodology</td>
+              <td>★★★</td>
+              <td>Scrum</td>
+              <td>★★★</td>
+            </tr>
+            <tr>
+              <td>Functional Testing</td>
+              <td>★★★</td>
+              <td>Non-Functional Testing</td>
+              <td>★★★</td>
+            </tr>
+            <tr>
+              <td>Mobile Testing</td>
+              <td>★★★</td>
+              <td>Web testing</td>
+              <td>★★★</td>
+            </tr>
+            <tr>
+              <td>Test cases</td>
+              <td>★★★</td>
+              <td>Test plans</td>
+              <td>★★★</td>
+            </tr>
+          </table>
+
+      </section>
+    </div>
+    <div>
+      <img class= "toolsImage" src="bugs.png" alt="bugs">
+      <section class="developmentToolsFormat">
+        <h3>Tools</h3>
+        <table class="table-style">
+          <tr>
+            <td>Jira</td>
+            <td>★★★</td>
+            <td>Chrome Dev Tools</td>
+            <td>★★★</td>
+          </tr>
+          <tr>
+            <td>G Suites</td>
+            <td>★★★★</td>
+            <td>Charles Proxy</td>
+            <td>★★</td>
+          </tr>
+          <tr>
+            <td>Postman</td>
+            <td>★★</td>
+            <td>Android Studio</td>
+            <td>★★</td>
+          </tr>
+          <tr>
+            <td>Android Studio</td>
+            <td>★★</td>
+          </tr>
+        </table>
+      </section>
+    </div>
+
+  </div>
+
+  <div id="Contact">
+    <h2>Contact</h2>
+    <p>"Pleasure in the job puts perfection in the work." <br />Aristotle</p>
+    <form  action="/" method="post"> <!--this form will get submitted to the index.js file for processing after
+      passing form validation -->
+        <input id="name" type="text" name="name" placeholder="Name*" required>
+        <input id="mail" type="email" name="email" placeholder="E-mail*" required>
+        <input id="phone" type="tel" name="phone" placeholder="Tel:" >
+      <div class="">
+        <textarea id="textArea" name="message" rows="8" cols="70" placeholder="Your Message.." required></textarea>
+        <p><button id="submitBtn" type="submit">Email</button></p>
+      </div>
+    </form>
+  </div>
+  <nav id="bottom-nav">
+    <ul>
+      <li><a href="#">Github</a></li>
+      <li><a href="#">Linkedin</a></li>
+    </ul>
+  </nav>
+  <div id="copyright">
+    ©2019 Nael Aljabi
+    </div>
+
+  </div>
+  <script src="index.js" charset="utf-8"></script>
+  </body>
+</html>
