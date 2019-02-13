@@ -32,16 +32,16 @@ app.post('/', (req, res) => { /* the following code will execute once the user f
     port: 587,
     secure: false, // true for 465, false for other ports
     auth: {
-      user: 'naelaj2@gmail.com',
-      pass: '1984lean1984'
+      user: 'hidden',
+      pass: 'hidden'
     },
     tls: {rejectUnauthorized: false}
   });
 
   //this will contain the body of the email using the emailBody variable we declared earlier
   let mailOptions = {
-    from: '"node Mailer Contact" <naelaj2@gmail.com>',
-    to: "naelaj2@gmail.com",
+    from: '"node Mailer Contact" <hidden>',
+    to: "hidden",
     subject: "Node Contact Request",
     text: '',
     html: emailBody // html body
