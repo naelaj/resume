@@ -2,6 +2,7 @@ const express = require('express'); /* import the express package  */
 const app = express();
 const bodyParser = require('body-parser'); /*import the body-parser package to access the values of the form elements */
 const nodemailer = require('nodemailer'); /* import nodemailer package to email the extracted values of the hml form */
+const xoauth2 = require('xoauth2'); // import the xoauth2 package to enable the app to access a gmail account
 
 app.use(bodyParser.urlencoded({
   extended: true
@@ -28,21 +29,25 @@ app.post('/', (req, res) => { /* the following code will execute once the user f
     /* the following code is to specify a mail provider, and conents of the email */
 
   let transporter = nodemailer.createTransport({
+    service: 'gmail',
     host: 'smtp.gmail.com',
-    port: 587,
-    secure: false, // true for 465, false for other ports
+    port: 465,
+    secure: true,
     auth: {
-      user: 'hidden',
-      pass: 'hidden'
+      type: 'OAuth2',
+      user: 'hidden', //sensitive information hidden on purpose
+      clientId: 'hidden',
+      clientSecret: 'hidden',
+      refreshToken: 'hidden'
     },
     tls: {rejectUnauthorized: false}
   });
 
   //this will contain the body of the email using the emailBody variable we declared earlier
   let mailOptions = {
-    from: '"node Mailer Contact" <hidden>',
-    to: "hidden",
-    subject: "Node Contact Request",
+    from: '"node Mailer Contact" <naelaj2@gmail.com>',
+    to: "naelaj2@gmail.com",
+    subject: "Contact Request",
     text: '',
     html: emailBody // html body
   };
