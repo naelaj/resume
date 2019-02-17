@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=yes" /> <!-- adjusts view on mobile devices -->
     <link rel="stylesheet" href="style.css">
     <title>Nael Aljabi</title>
   </head>
@@ -119,14 +120,13 @@
 
   <div id="Contact">
     <h2>Contact</h2>
-    <p>"Pleasure in the job puts perfection in the work." <br />Aristotle</p>
     <form  action="/" method="post"> <!--this form will get submitted to the index.js file for processing after
       passing form validation -->
         <input id="name" type="text" name="name" placeholder="Name*" required>
         <input id="mail" type="email" name="email" placeholder="E-mail*" required>
         <input id="phone" type="tel" name="phone" placeholder="Tel:" >
       <div class="">
-        <textarea id="textArea" name="message" rows="8" cols="70" placeholder="Your Message.." required></textarea>
+        <textarea id="textArea" name="message" rows="15" cols="70" placeholder="Your Message.." required></textarea>
         <p><button id="submitBtn" type="submit">Email</button></p>
       </div>
     </form>
@@ -134,13 +134,12 @@
   <nav id="bottom-nav">
     <ul>
       <li><a href="https://github.com/naelaj?tab=repositories">Github</a></li>
-      <li><a href="https://www.linkedin.com/in/naelaljabi/">Linedin</a></li>
+      <li><a href="https://www.linkedin.com/in/naelaljabi/">Linkedin</a></li>
     </ul>
   </nav>
   <div id="copyright">
     ©2019 Nael Aljabi
     </div>
-
   </div>
   <script src="index.js" charset="utf-8"></script>
   </body>

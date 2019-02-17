@@ -76,6 +76,7 @@ margin: 20px 100px 75px;
 text-align: left;
 line-height: 25px;
 word-spacing: 2px;
+padding-top: 50px;
 }
 
 /* styling the main skills section */
@@ -83,6 +84,7 @@ word-spacing: 2px;
   width: 10px 30px;
   margin: 20px 150px;
   text-align: left;
+  padding-top: 20px;
 }
 
 /* spacing the contents of the development/testing and tools sections */
@@ -97,6 +99,7 @@ word-spacing: 2px;
   text-align: left;
   line-height: 25px;
   word-spacing: 2px;
+  padding-bottom: 10px;
 }
 
 /* the following are the styling and view adjustment for the bottom nav menu */
@@ -130,7 +133,8 @@ word-spacing: 2px;
   background: #181818;
   margin: 0;
   text-align: left;
-  padding-bottom: 15px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   padding-left: 10px;
 
 }
