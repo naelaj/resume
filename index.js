@@ -2,7 +2,7 @@ const express = require('express'); /* import the express package  */
 const app = express();
 const bodyParser = require('body-parser'); /*import the body-parser package to access the values of the form elements */
 const nodemailer = require('nodemailer'); /* import nodemailer package to email the extracted values of the hml form */
-const xoauth2 = require('xoauth2'); // import the xoauth2 package to enable the app to access a gmail account
+const xoauth2 = require('xoauth2');
 
 app.use(bodyParser.urlencoded({
   extended: true
@@ -22,6 +22,7 @@ app.post('/', (req, res) => { /* the following code will execute once the user f
     <li>Name: ${req.body.name}</li>
     <li>Email: ${req.body.email}</li>
     <li>Phone: ${req.body.phone}</li>
+    <li>Reply Preference: ${req.body.replyPreference}</li>
     </ul>
     <h3>Message:</h3>
     <p>${req.body.message}</p>
@@ -32,13 +33,13 @@ app.post('/', (req, res) => { /* the following code will execute once the user f
     service: 'gmail',
     host: 'smtp.gmail.com',
     port: 465,
-    secure: true,
+    secure: true, // true for 465, false for other ports
     auth: {
       type: 'OAuth2',
-      user: 'hidden', //sensitive information hidden on purpose
-      clientId: 'hidden',
-      clientSecret: 'hidden',
-      refreshToken: 'hidden'
+      user: 'naelaj2@gmail.com',
+      clientId: '780638131485-r8e1sofl86lsl9br4lmfq1317g4retsf.apps.googleusercontent.com',
+      clientSecret: 'pGufsWg5YSlmJsbNaSbEpwAA',
+      refreshToken: '1/-s2_2Qj2w98N8DtkUXRJliEGcQr7SyAWJeJyHP1CbdHkxHaDWc51yJJRkl1_Z2b5'
     },
     tls: {rejectUnauthorized: false}
   });
@@ -47,7 +48,7 @@ app.post('/', (req, res) => { /* the following code will execute once the user f
   let mailOptions = {
     from: '"node Mailer Contact" <naelaj2@gmail.com>',
     to: "naelaj2@gmail.com",
-    subject: "Contact Request",
+    subject: "Node Contact Request",
     text: '',
     html: emailBody // html body
   };

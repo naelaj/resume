@@ -1,0 +1,28 @@
+{
+  "name": "form-mailer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "nael",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "nodemailer": "^5.1.1",
+    "nodemon": "^1.18.9",
+    "react": "^16.8.2",
+    "react-dom": "^16.8.2",
+    "xoauth2": "^1.2.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.5",
+    "babel-preset-react": "^6.24.1",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.29.5",
+    "webpack-dev-server": "^3.1.14"
+  }
+}

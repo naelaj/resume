@@ -120,27 +120,38 @@
 
   <div id="Contact">
     <h2>Contact</h2>
-    <form  action="/" method="post"> <!--this form will get submitted to the index.js file for processing after
-      passing form validation -->
-        <input id="name" type="text" name="name" placeholder="Name*" required>
-        <input id="mail" type="email" name="email" placeholder="E-mail*" required>
-        <input id="phone" type="tel" name="phone" placeholder="Tel:" >
-      <div class="">
-        <textarea id="textArea" name="message" rows="15" cols="70" placeholder="Your Message.." required></textarea>
-        <p><button id="submitBtn" type="submit">Email</button></p>
-      </div>
+
+
+    <form  action="/" method="post">
+
+        <fieldset>
+        <legend>Contact Info</legend>
+        <input  type="text" name="name" placeholder="Name*" required>
+        <input  type="email" name="email" placeholder="E-mail*" required>
+        <input  type="tel" name="phone" placeholder="Tel:" >
+
+        </fieldset>
+        <p>How would you like to be contacted?</p>
+        <select name="replyPreference">
+          <option value="Reply by Email">By Email</option>
+          <option value="Reply by phone ">By Phone</option>
+        </select><br/>
+
+        <textarea id="textArea" name="message" rows="10" cols="50" placeholder="Your Message.." required></textarea>
+        <input id="submitBtn" type="submit" value="Email">
+
     </form>
   </div>
-  <nav id="bottom-nav">
-    <ul>
-      <li><a href="https://github.com/naelaj?tab=repositories">Github</a></li>
-      <li><a href="https://www.linkedin.com/in/naelaljabi/">Linkedin</a></li>
-    </ul>
-  </nav>
-  <div id="copyright">
-    ©2019 Nael Aljabi
-    </div>
-  </div>
+
+  <footer>
+    <nav id="bottom-nav">
+      <ul>
+        <li><a href="https://github.com/naelaj?tab=repositories">Github</a></li>
+        <li><a href="https://www.linkedin.com/in/naelaljabi/">Linkedin</a></li>
+      </ul>
+    </nav>
+  </footer>
+
   <script src="index.js" charset="utf-8"></script>
   </body>
 </html>
