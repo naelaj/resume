@@ -31,6 +31,7 @@
     </section>
   </div>
 
+
   <div id="Skills">
     <h2>Skills</h2>
     <div>
@@ -118,27 +119,25 @@
 
   </div>
 
+
   <div id="Contact">
     <h2>Contact</h2>
 
 
     <form  action="/" method="post">
 
-        <fieldset>
-        <legend>Contact Info</legend>
         <input  type="text" name="name" placeholder="Name*" required>
         <input  type="email" name="email" placeholder="E-mail*" required>
         <input  type="tel" name="phone" placeholder="Tel:" >
+        <textarea id="textArea" name="message" rows="10" cols="40" placeholder="Your Message.." required></textarea>
 
-        </fieldset>
         <p>How would you like to be contacted?</p>
         <select name="replyPreference">
-          <option value="Reply by Email">By Email</option>
-          <option value="Reply by phone ">By Phone</option>
+          <option value="Reply by Email">Email</option>
+          <option value="Reply by phone ">Phone</option>
         </select><br/>
 
-        <textarea id="textArea" name="message" rows="10" cols="50" placeholder="Your Message.." required></textarea>
-        <input id="submitBtn" type="submit" value="Email">
+        <input id="submitBtn" type="submit" value="Send">
 
     </form>
   </div>
